@@ -14,7 +14,7 @@ export class Produto {
     @Column()
     quantidade: number
 
-    @Column()
+    @Column('text')
     descricao: string
 
     @Column({ nullable: true })
