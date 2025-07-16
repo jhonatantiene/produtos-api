@@ -3,11 +3,12 @@ import { Produto } from "src/produtos/produto.entity"
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: 'mysql',
-    host: 'localhost',
-    port: 3306,
+    host: 'tramway.proxy.rlwy.net',
+    port: 58828,
     username: 'root',
-    password: '1234',
-    database: 'produtos_db',
+    password: 'MWraNJOmVcCjmWUsIcIwfBqrAdEUByJi',
+    database: 'railway',
     entities: [Produto],
+    autoLoadEntities: true,
     synchronize: true
 }
