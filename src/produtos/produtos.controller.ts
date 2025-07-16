@@ -7,12 +7,12 @@ import { CreateProdutoDto } from './dto/criar-produto.dto';
 export class ProdutosController {
     constructor(private readonly produtosService: ProdutosService) { }
 
-    @Post()
+    @Post('cadastrar')
     criar(@Body() produto: CreateProdutoDto): Promise<Produto> {
         return this.produtosService.criar(produto)
     }
 
-    @Get('cadastrar')
+    @Get()
     buscarTodos(): Promise<Produto[]> {
         return this.produtosService.buscarTodos()
     }
