@@ -1,12 +1,13 @@
 import { TypeOrmModuleOptions } from "@nestjs/typeorm"
+import { Produto } from "src/produtos/produto.entity"
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: 'mysql',
-    host: 'locahost',
-    port: 3396,
+    host: 'localhost',
+    port: 3306,
     username: 'root',
     password: '1234',
-    database: 'MYSQL80',
-    entities: [],
+    database: 'produtos_db',
+    entities: [Produto],
     synchronize: true
 }
