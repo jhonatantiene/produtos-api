@@ -7,6 +7,9 @@ export class CreateProdutoDto {
     @IsNumber()
     preco: number;
 
+    @IsNumber()
+    quantidade: number;
+
     @IsString()
     descricao: string;
 

@@ -12,7 +12,7 @@ export class ProdutosController {
         return this.produtosService.criar(produto)
     }
 
-    @Get()
+    @Get('cadastrar')
     buscarTodos(): Promise<Produto[]> {
         return this.produtosService.buscarTodos()
     }

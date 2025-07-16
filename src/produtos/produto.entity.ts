@@ -12,6 +12,9 @@ export class Produto {
     preco: number
 
     @Column()
+    quantidade: number
+
+    @Column()
     descricao: string
 
     @Column({ nullable: true })
