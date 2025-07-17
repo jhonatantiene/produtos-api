@@ -11,6 +11,16 @@ export class ProdutosService {
         return this.produtoRepo.save(produto)
     }
 
+    async buscarPorId(id: number): Promise<Produto> {
+        const produto = await this.produtoRepo.findOneBy({ id });
+
+        if (!produto) {
+            throw new NotFoundException(`Produto com ID ${id} não foi encontrado`);
+        }
+
+        return produto;
+    }
+
     async buscarTodos(): Promise<Produto[]> {
         return this.produtoRepo.find()
     }
