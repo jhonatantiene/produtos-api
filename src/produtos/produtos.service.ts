@@ -12,13 +12,13 @@ export class ProdutosService {
     }
 
     async buscarPorId(id: number): Promise<Produto> {
-        const produto = await this.produtoRepo.findOneBy({ id });
+        const produto = await this.produtoRepo.findOneBy({ id })
 
         if (!produto) {
-            throw new NotFoundException(`Produto com ID ${id} não foi encontrado`);
+            throw new NotFoundException(`Produto com ID ${id} não foi encontrado`)
         }
 
-        return produto;
+        return produto
     }
 
     async buscarTodos(): Promise<Produto[]> {
