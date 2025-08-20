@@ -4,9 +4,9 @@ import { Produto } from "src/produtos/produto.entity"
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: 'mysql',
     host: 'tramway.proxy.rlwy.net',
-    port: 58828,
+    port: 14613,
     username: 'root',
-    password: 'MWraNJOmVcCjmWUsIcIwfBqrAdEUByJi',
+    password: 'uaQWeWQaHEmpgTudaGbZQKiFLZCxBHpc',
     database: 'railway',
     entities: [Produto],
     autoLoadEntities: true,
