@@ -6,7 +6,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     host: 'tramway.proxy.rlwy.net',
     port: 14613,
     username: 'root',
-    password: 'uaQWeWQaHEmpgTudaGbZQKiFLZCxBHpc',
+    password: 'MpbuszsHlfXPOlPwJkbGqCgAjsUFsqvc',
     database: 'railway',
     entities: [Produto],
     autoLoadEntities: true,
